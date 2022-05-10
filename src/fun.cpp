@@ -46,7 +46,7 @@ unsigned int faStr2(const char* str) {
         if (c != ' ') {
             if (c >= 'A' && c <= 'Z' && !inWord && !notWord)
                 inWord = true;
-            else if (c >= 'A' && c <= 'Z' && inWord && !notWord) 
+            else if (c >= 'A' && c <= 'Z' && inWord && !notWord)
                 notWord = true;
             else if ((c < 'a' || c > 'z') && inWord && !notWord)
                 notWord = true;
